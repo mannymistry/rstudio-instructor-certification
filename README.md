@@ -1,5 +1,5 @@
 
-# Rstudio Instructor Training
+# RStudio Instructor Training
 
 This repo contains the materials I put together for the RStudio Teaching
 Exam. Feel free to share and re-use.
@@ -25,8 +25,8 @@ Exam. Feel free to share and re-use.
   - In her last role she primarily worked on ETL(Extract Transform Load)
     tasks within Jupyter notebooks using Python and R. She is familiar
     with dplyr and pipes and finds them very useful. She also has
-    beginner knowledge of ggploy having inherited an ETL script which
-    included plots.
+    beginner knowledge of ggplot having inherited an ETL script which
+    included histograms and scatter plots.
 
   - Soo Youn’s boss hoards alternative data believing that nuggets gold
     of exists within them. She is constantly being asked to assess the
