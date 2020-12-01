@@ -1,0 +1,54 @@
+---
+title: "EDA in the Tidyverse"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(sortable)
+library(magrittr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## EDA Cycle
+
+### Arrange in the correct order
+
+A question to verify that you understand the purpose of EDA and the foundations steps that need to be taken to get you going. 
+
+```{r eda-concepts, echo=FALSE}
+# Define the answer options
+eda <- c(
+    "Generate many questions about your data",
+    "Search for answers by visualising, transforming, and modelling your data",
+    "Use what you learn to refine your questions and/or generate new questions."
+  )
+# Initialize the question
+question_rank(
+  "Put the steps taken in EDA in order",
+  answer(eda, correct = TRUE),
+  answer(rev(eda), correct = FALSE,
+         message = "You sorted in reverse order!"
+         ),
+  allow_retry = TRUE
+)
+```
+
+## Missing Values
+
+### Multiple Choice 
+A question to see if you understand how to use dplyr functions when working with NA's
+
+```{r letter-a, echo=FALSE}
+question("What dplyr function would you add the end of the below pipe to drop any
+         observation with a missing value:
+         `penguins %>% 
+          _______()`
+         ",
+  answer("`!is.na`"),
+  answer("`drop_na`", correct = TRUE),
+  answer("`na_drop`")
+)
+```
+
