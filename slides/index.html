@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 ## EDA in the Tidyverse
 ### Mandip Mistry
 ### 56 Doors Consulting
-### 2020/11/12 (updated: 2020-12-01)
+### 2020/11/12 (updated: 2020-12-02)
 
 ---
 
@@ -53,12 +53,12 @@ and ask a question
 ---
 # Learning Objectives
 
- -  **Remember** the three systematic steps that make up EDA
+ -  **Identify** and **Review** the three systematic steps that make up EDA
  
 --
 
- -  **Review** how to manage  missing data in the Tidyverse within the context of EDA
-
+ - **Describe** different methods for handling missing values 
+ 
 --
 
  - **Apply** the geom_boxplot and geom_jitter function to examine the mean and spread of centrality of variables your data set
@@ -134,7 +134,7 @@ The dataset contain data for 344 penguins. There are 3 different species of peng
  
 - Is there a reason for the variation within my variables?
  
--- 
+--
 
 - Is there co-variation between my variables?
 
@@ -206,34 +206,17 @@ ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
 ???
 Now head over
 ---
-## Your T
+## Your Turn
 
+ -  Head over to the RStudio Cloud Environment and Run the chunk of code 
 ---
+
 ## Flipper Length Distributions
 
 
-```r
-ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
-  geom_boxplot(aes(color = species), width = 0.3, show.legend = FALSE) +
-  geom_jitter(aes(color = species), alpha = 0.5, show.legend = FALSE, position = position_jitter(width = 0.2, seed = 0)) +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
-  theme_minimal() +
-  labs(x = "Species",
-       y = "Flipper length (mm)")
-```
-
-```
-## Warning: Removed 2 rows containing non-finite values (stat_boxplot).
-```
-
-```
-## Warning: Removed 2 rows containing missing values (geom_point).
-```
-
 ![](index_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
-
 ???
-Now head over
+
 ---
 ## Flipper Length Distributions
 
@@ -282,12 +265,6 @@ The jitter geom is a convenient shortcut for geom_point(position = "jitter"). It
 
 Color and Titles
 
----
-background-position: 90% 5%
-background-size: 10%
-##Flipper Length Distributions
-
-![](index_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
 ---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
