@@ -106,12 +106,22 @@ The dataset contain data for 344 penguins. There are 3 different species of peng
 - Are there are any missing values?
  
 --
+
+- Why are there missing values?
+
+--
  
 - Is there variation within my variables?
  
 --
  
+- Is there a reason for the variation within my variables?
+ 
+-- 
 - Is there co-variation between my variables?
+--
+
+-  etc etc etc
 
 ???
 
@@ -133,22 +143,16 @@ quality questions
  
 --
 
- - Is there co-variation between my variables?
- 
---
-
  - Lets Recap First (head to https://56doors.shinyapps.io/formative_assessment/)
 
 
 ???
 
-Not in this lesson at least but lets answer the questions you should always 
-ask of your data before moving forward
+Not in this lesson at least but lets answer the questions you should always ask of your data before moving forward
 
 Focus on today are what do with missing values?
 
 Does variation exist within my variables?
-Does co-variation exist between  my variables?
  
 ---
 ## Missing Values 
