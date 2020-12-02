@@ -32,11 +32,11 @@ Exam. Feel free to share and re-use.
     of exists within them. She is constantly being asked to assess the
     datasets to see if anything of value exists. Her boss is an R
     Evangelist and she believes she can score extra brownie points if
-    she create analysis that he can easily re-use.
+    she creates analysis that he can easily re-use.
 
   - Soo Youn has an extremely heavy workload and a newborn who keeps her
     up all night
 
 ## Concept Map
 
-![EDA Concept Map](EDAconceptmap.png)
+![EDA Concept Map](edaconceptmap.jpg)
