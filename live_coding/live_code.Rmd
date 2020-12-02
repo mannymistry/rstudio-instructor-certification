@@ -1,0 +1,77 @@
+---
+title: "Live Coding - EDA"
+author: "Mandip"
+date: "30/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+This doc stores all of the code for the live coding portion of your class
+
+Lets deal with missing values first 
+Take a quick look at our data
+
+```{r, eval=FALSE}
+# Copy Paste This
+data(penguins)
+summary(penguins)  
+```
+
+When checking for missing values there are 2 things that you can do. 
+1) Delete them all (not always suggested) 
+
+```{r, eval = FALSE}
+# Type this
+cleaned_data_set <- penguins %>% 
+  drop_na()
+```
+
+Don't recommend this however
+2) Instead subset those NA values take a quick look and see if you can use any of them 
+Instead what you can do is isolate the NA give em a look 
+And see if you can replace the missing values with something
+So that you can keep some of the useful other data
+
+
+```{r, eval=FALSE}
+# Type This
+na_values <- penguins %>% 
+  filter_all(any_vars(is.na(.)))
+
+```
+
+```{r, eval=FALSE}
+# Now lets take a quick look at that data now  
+# Copy paste this in
+view(na_values)
+summary(na_values)
+```
+
+From first look most of the NA Values are are just missing sex and that's all 
+For that reason you probably just want to drop the rows that are missing the values 
+for measurements for the bill_length and flipper_length
+
+How to do this?
+Subset the values you want to drop
+```{r, eval = FALSE}
+na_to_drop <- na_values %>% 
+  filter(is.na(bill_length_mm))
+
+```
+
+So lets just subset those 2 records out 
+Only drop the records that do not have a value for bill length 
+
+```{r, eval = FALSE}
+cleaned_data_set <- penguins %>% 
+  filter(!is.na(bill_length_mm))
+
+```
+
+
+
