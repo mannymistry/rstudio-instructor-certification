@@ -27,7 +27,7 @@ class: inverse, center, middle
 --
       - Background in Finance
 --
-      - Have a 1 year old daughter who believes I don't deserve to sleep 
+      - Have a 1 year old daughter who believes I don't deserve sleep 
 ???
 10 seconds
 
@@ -40,7 +40,7 @@ Open the below links in three different tabs in your browser
  
  - [A quiz to check your understanding](https://56doors.shinyapps.io/formative_assessment/)
  
- - [RStudio in the Cloud to follow along as I code](https://rstudio.cloud/project/1970032)
+ - [RStudio Cloud Environment to follow along as I code](https://rstudio.cloud/project/1970032)
 
 ???
 10-15 seconds
@@ -59,7 +59,7 @@ and ask a question
  
 --
 
- - **Apply** the geom_boxplot and geom_jitter function to examine the mean and spread of centrality of variables your data set
+ - **Apply** the geom_boxplot and geom_jitter function to examine the distribution of the numerical values in our dataset
 
 
 ???
