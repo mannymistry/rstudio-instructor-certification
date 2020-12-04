@@ -40,12 +40,9 @@ question_rank(
 question("Why is asking a large quantity of questions so important to EDA? **(select ALL that apply)**",
   answer("Difficult to know which questions are revealing at the onset",  correct = TRUE),
   answer("Each new question that you ask exposes a new aspect of your data ", correct = TRUE),
-  answer("Each new question increaseses your chance of making a discovery", correct = TRUE)
+  answer("Each new question increases your chance of making a discovery", correct = TRUE)
 )
 ```
-
-
-
 
 ## Missing Values
 
